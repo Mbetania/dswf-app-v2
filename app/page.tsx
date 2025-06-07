@@ -15,8 +15,8 @@ export default function HomePage() {
       <div className="flex-grow flex items-center justify-center py-12">
         <div className="max-w-6xl w-full mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-gray-800 mb-4">Bienvenidos a DevCrafters</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h1 className="lg:text-5xl text-3xl font-bold text-gray-800 mb-4">Bienvenidos a DevCrafters</h1>
+            <p className="lg:text-xl text-md text-gray-600 max-w-3xl mx-auto">
               Desarrollador Full Stack apasionado por la creación de APIs.
             </p>
           </div>

@@ -24,7 +24,7 @@ interface WeatherWidgetProps {
 export function WeatherWidget({ weather, loading, error, description }: WeatherWidgetProps) {
   if (loading) {
     return (
-      <div className="bg-white rounded-lg shadow-md p-6 h-80">
+      <div className="bg-white rounded-lg shadow-md p-6 h-auto">
         <div className="animate-pulse">
           <div className="h-4 bg-gray-200 rounded w-3/4 mb-4"></div>
           <div className="h-8 bg-gray-200 rounded w-1/2 mb-4"></div>
@@ -40,7 +40,7 @@ export function WeatherWidget({ weather, loading, error, description }: WeatherW
 
   if (error) {
     return (
-      <div className="bg-white rounded-lg shadow-md p-6 h-80 flex items-center justify-center">
+      <div className="bg-white rounded-lg shadow-md p-6 h-auto flex items-center justify-center">
         <div className="text-center">
           <Cloud className="w-12 h-12 text-gray-400 mx-auto mb-4" />
           <p className="text-red-600 font-medium mb-2">Error</p>
@@ -52,7 +52,7 @@ export function WeatherWidget({ weather, loading, error, description }: WeatherW
 
   if (!weather) {
     return (
-      <div className="bg-white rounded-lg shadow-md p-6 h-80 flex items-center justify-center">
+      <div className="bg-white rounded-lg shadow-md p-6 h-auto flex items-center justify-center">
         <div className="text-center">
           <Cloud className="w-12 h-12 text-gray-400 mx-auto mb-4" />
           <p className="text-gray-600">{description}</p>
@@ -85,7 +85,7 @@ export function WeatherWidget({ weather, loading, error, description }: WeatherW
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 h-80">
+    <div className="bg-white rounded-lg shadow-md p-6 h-auto">
       <div className="text-center mb-4">
         <h3 className="text-lg font-semibold text-gray-800 mb-1">{weather.location}</h3>
         <p className="text-sm text-gray-600">{description}</p>
