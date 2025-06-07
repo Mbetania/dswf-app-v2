@@ -1,0 +1,144 @@
+{
+    "logs": [
+        {
+            "id": "task1",
+            "date": "2024-05-02",
+            "time": "10:00",
+            "title": "Creación proyecto Next.js",
+            "description": "Inicialización del proyecto React con Next.js, instalación de dependencias básicas (tailwind, lucide-icons)",
+            "category": "Configuración",
+            "status": "completed",
+            "hours": 4
+        },
+        {
+            "id": "task2",
+            "date": "2024-05-03",
+            "time": "14:30",
+            "title": "Configuración inicial",
+            "description": "Estructura de carpetas, configuración de eslint/prettier y primeros estilos globales",
+            "category": "Configuración",
+            "status": "completed",
+            "hours": 3
+        },
+        {
+            "id": "task3",
+            "date": "2024-05-07",
+            "time": "09:00",
+            "title": "Componente Sidebar",
+            "description": "Desarrollo del sidebar con navegación y estilos responsive",
+            "category": "Frontend",
+            "status": "completed",
+            "hours": 5
+        },
+        {
+            "id": "task4",
+            "date": "2024-05-09",
+            "time": "11:00",
+            "title": "Rutas básicas",
+            "description": "Creación de páginas iniciales (dashboard, proyectos, bitácora)",
+            "category": "Frontend",
+            "status": "completed",
+            "hours": 3
+        },
+        {
+            "id": "task5",
+            "date": "2024-05-14",
+            "time": "13:00",
+            "title": "JSON de proyectos",
+            "description": "Creación del archivo projects.json con datos de ejemplo",
+            "category": "Datos",
+            "status": "completed",
+            "hours": 2
+        },
+        {
+            "id": "task6",
+            "date": "2024-05-16",
+            "time": "15:30",
+            "title": "Componente project card",
+            "description": "Desarrollo del componente para mostrar tarjetas de proyectos",
+            "category": "Frontend",
+            "status": "completed",
+            "hours": 4
+        },
+        {
+            "id": "task7",
+            "date": "2024-05-21",
+            "time": "10:00",
+            "title": "Conexión a API externa",
+            "description": "Configuración de fetch y estados para consumo de API",
+            "category": "Backend",
+            "status": "completed",
+            "hours": 6
+        },
+        {
+            "id": "task8",
+            "date": "2024-05-23",
+            "time": "14:00",
+            "title": "Componente API Data",
+            "description": "Visualización de datos desde API con loading y error states",
+            "category": "Frontend",
+            "status": "completed",
+            "hours": 5
+        },
+        {
+            "id": "task9",
+            "date": "2024-05-28",
+            "time": "09:30",
+            "title": "Componentes faltantes",
+            "description": "Desarrollo de Card y componentes auxiliares",
+            "category": "Frontend",
+            "status": "completed",
+            "hours": 4
+        },
+        {
+            "id": "task10",
+            "date": "2024-05-30",
+            "time": "11:00",
+            "title": "Maquetación final",
+            "description": "Ajustes de layout y estilos en todas las páginas",
+            "category": "Frontend",
+            "status": "in-progress",
+            "hours": 3
+        },
+        {
+            "id": "task11",
+            "date": "2024-06-04",
+            "time": "13:00",
+            "title": "JSON bitácora",
+            "description": "Creación del archivo bitacora.json con estructura de datos",
+            "category": "Datos",
+            "status": "completed",
+            "hours": 2
+        },
+        {
+            "id": "task12",
+            "date": "2024-06-06",
+            "time": "15:00",
+            "title": "Página Bitácora",
+            "description": "Implementación de vista para mostrar registros de actividad",
+            "category": "Frontend",
+            "status": "completed",
+            "hours": 4
+        },
+        {
+            "id": "task13",
+            "date": "2024-06-06",
+            "time": "15:00",
+            "title": "Animaciones",
+            "description": "Implementación de vista para mostrar registros de actividad",
+            "category": "Frontend",
+            "status": "to-do",
+            "hours": 4
+        },
+        {
+            "id": "task14",
+            "date": "2024-06-06",
+            "time": "15:00",
+            "title": "Grid de imagenes",
+            "description": "Implementación de vista para mostrar registros de actividad",
+            "category": "Frontend",
+            "status": "to-do",
+            "hours": 4
+        }
+    ]
+}

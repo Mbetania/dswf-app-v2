@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "title": "Sistema de Gestión Hospitalaria",
+    "description": "Aplicación web completa para la gestión de pacientes, citas médicas y historiales clínicos en hospitales.",
+    "category": "Salud",
+    "technologies": [
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "Express"
+    ],
+    "status": "Completado",
+    "year": 2024,
+    "image": "/placeholder-salud.png?height=200&width=300",
+    "features": [
+      "Gestión de pacientes",
+      "Agenda médica",
+      "Historiales clínicos",
+      "Reportes"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Plataforma E-learning",
+    "description": "Sistema de aprendizaje en línea con cursos interactivos, evaluaciones y seguimiento de progreso.",
+    "category": "Educación",
+    "technologies": [
+      "Next.js",
+      "MongoDB",
+      "Stripe",
+      "Socket.io"
+    ],
+    "status": "En desarrollo",
+    "year": 2024,
+    "image": "/placeholder-ed.png?height=200&width=300",
+    "features": [
+      "Cursos interactivos",
+      "Evaluaciones",
+      "Chat en vivo",
+      "Certificaciones"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "App de Delivery de Comida",
+    "description": "Aplicación móvil y web para pedidos de comida con seguimiento en tiempo real y pagos integrados.",
+    "category": "Comercio",
+    "technologies": [
+      "React Native",
+      "Firebase",
+      "Google Maps",
+      "PayPal"
+    ],
+    "status": "Completado",
+    "year": 2023,
+    "image": "/placeholder-ecommerce-services.png?height=200&width=300",
+    "features": [
+      "Pedidos online",
+      "Seguimiento GPS",
+      "Pagos seguros",
+      "Calificaciones"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Dashboard de Analytics",
+    "description": "Panel de control para visualización de datos empresariales con gráficos interactivos y reportes.",
+    "category": "Análisis",
+    "technologies": [
+      "Vue.js",
+      "D3.js",
+      "Python",
+      "FastAPI"
+    ],
+    "status": "En desarrollo",
+    "year": 2024,
+    "image": "/placeholder-analytic.png?height=200&width=300",
+    "features": [
+      "Gráficos interactivos",
+      "Reportes automáticos",
+      "Filtros avanzados",
+      "Exportación"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Sistema de Inventario",
+    "description": "Aplicación para gestión de inventarios con control de stock, alertas y reportes de ventas.",
+    "category": "Gestión",
+    "technologies": [
+      "Angular",
+      "Spring Boot",
+      "MySQL",
+      "Docker"
+    ],
+    "status": "Completado",
+    "year": 2023,
+    "image": "/placeholder-analytic.png?height=200&width=300",
+    "features": [
+      "Control de stock",
+      "Alertas automáticas",
+      "Reportes de ventas",
+      "Códigos de barras"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Red Social para Desarrolladores",
+    "description": "Plataforma social especializada para desarrolladores con compartir código y colaboración.",
+    "category": "Social",
+    "technologies": [
+      "React",
+      "GraphQL",
+      "Node.js",
+      "Redis"
+    ],
+    "status": "En desarrollo",
+    "year": 2024,
+    "image": "/placeholder-tech-soft.png?height=200&width=300",
+    "features": [
+      "Compartir código",
+      "Colaboración",
+      "Foros técnicos",
+      "Portafolio"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "App de Fitness y Nutrición",
+    "description": "Aplicación móvil para seguimiento de ejercicios, dietas y objetivos de salud personal.",
+    "category": "Salud",
+    "technologies": [
+      "Flutter",
+      "Firebase",
+      "ML Kit",
+      "HealthKit"
+    ],
+    "status": "Completado",
+    "year": 2023,
+    "image": "/placeholder-salud.png?height=200&width=300",
+    "features": [
+      "Seguimiento ejercicios",
+      "Planes nutricionales",
+      "Objetivos personales",
+      "Estadísticas"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Sistema de Reservas Hoteleras",
+    "description": "Plataforma web para reservas de hoteles con búsqueda avanzada y gestión de disponibilidad.",
+    "category": "Turismo",
+    "technologies": [
+      "Laravel",
+      "Vue.js",
+      "MySQL",
+      "Stripe"
+    ],
+    "status": "En desarrollo",
+    "year": 2024,
+    "image": "/placeholder-ecommerce-services.png?height=200&width=300",
+    "features": [
+      "Búsqueda avanzada",
+      "Reservas online",
+      "Gestión disponibilidad",
+      "Pagos seguros"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Plataforma de Crowdfunding",
+    "description": "Sistema de financiamiento colectivo para proyectos creativos y emprendimientos.",
+    "category": "Finanzas",
+    "technologies": [
+      "Django",
+      "React",
+      "PostgreSQL",
+      "Blockchain"
+    ],
+    "status": "Completado",
+    "year": 2023,
+    "image": "/placeholder-ecommerce-services.png?height=200&width=300",
+    "features": [
+      "Campañas de fondeo",
+      "Pagos seguros",
+      "Seguimiento proyectos",
+      "Recompensas"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "App de Gestión de Tareas",
+    "description": "Aplicación de productividad para gestión de tareas personales y colaboración en equipo.",
+    "category": "Productividad",
+    "technologies": [
+      "Svelte",
+      "Supabase",
+      "Tailwind",
+      "PWA"
+    ],
+    "status": "En desarrollo",
+    "year": 2024,
+    "image": "/placeholder-tech-soft.png?height=200&width=300",
+    "features": [
+      "Gestión tareas",
+      "Colaboración equipo",
+      "Recordatorios",
+      "Sincronización"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Sistema de Gestión Escolar",
+    "description": "Plataforma integral para administración de colegios con gestión de estudiantes y calificaciones.",
+    "category": "Educación",
+    "technologies": [
+      "ASP.NET",
+      "SQL Server",
+      "Bootstrap",
+      "SignalR"
+    ],
+    "status": "Completado",
+    "year": 2023,
+    "image": "/placeholder-ed.png?height=200&width=300",
+    "features": [
+      "Gestión estudiantes",
+      "Calificaciones",
+      "Comunicación padres",
+      "Reportes académicos"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Marketplace de Servicios",
+    "description": "Plataforma para conectar proveedores de servicios con clientes, con sistema de calificaciones.",
+    "category": "Comercio",
+    "technologies": [
+      "Ruby on Rails",
+      "React",
+      "PostgreSQL",
+      "Elasticsearch"
+    ],
+    "status": "En desarrollo",
+    "year": 2024,
+    "image": "/placeholder-ecommerce-services.png?height=200&width=300",
+    "features": [
+      "Búsqueda servicios",
+      "Calificaciones",
+      "Chat integrado",
+      "Pagos seguros"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "App de Monitoreo IoT",
+    "description": "Aplicación para monitoreo de dispositivos IoT con alertas en tiempo real y análisis de datos.",
+    "category": "IoT",
+    "technologies": [
+      "React",
+      "MQTT",
+      "InfluxDB",
+      "Grafana"
+    ],
+    "status": "Completado",
+    "year": 2023,
+    "image": "/placeholder-tech-soft.png?height=200&width=300",
+    "features": [
+      "Monitoreo tiempo real",
+      "Alertas automáticas",
+      "Análisis datos",
+      "Dashboard personalizable"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Sistema de Gestión de Eventos",
+    "description": "Plataforma para organización y gestión de eventos con venta de tickets y check-in digital.",
+    "category": "Eventos",
+    "technologies": [
+      "Nuxt.js",
+      "Strapi",
+      "Stripe",
+      "QR Codes"
+    ],
+    "status": "En desarrollo",
+    "year": 2024,
+    "image": "/placeholder-analytic.png?height=200&width=300",
+    "features": [
+      "Venta tickets",
+      "Check-in digital",
+      "Gestión asistentes",
+      "Estadísticas evento"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Plataforma de Telemedicina",
+    "description": "Sistema de consultas médicas virtuales con videollamadas y gestión de recetas digitales.",
+    "category": "Salud",
+    "technologies": [
+      "React",
+      "WebRTC",
+      "Node.js",
+      "MongoDB"
+    ],
+    "status": "Completado",
+    "year": 2023,
+    "image": "/placeholder-salud.png?height=200&width=300",
+    "features": [
+      "Videollamadas",
+      "Recetas digitales",
+      "Historial médico",
+      "Agenda virtual"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "App de Gestión Financiera",
+    "description": "Aplicación personal para control de gastos, presupuestos y análisis financiero.",
+    "category": "Finanzas",
+    "technologies": [
+      "React Native",
+      "Chart.js",
+      "SQLite",
+      "Plaid API"
+    ],
+    "status": "En desarrollo",
+    "year": 2024,
+    "image": "/placeholder-tech-soft.png?height=200&width=300",
+    "features": [
+      "Control gastos",
+      "Presupuestos",
+      "Análisis financiero",
+      "Sincronización bancaria"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Sistema de Gestión de Biblioteca",
+    "description": "Plataforma digital para gestión de bibliotecas con catálogo online y reservas de libros.",
+    "category": "Educación",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "Bootstrap",
+      "jQuery"
+    ],
+    "status": "Completado",
+    "year": 2023,
+    "image": "/placeholder-ed.png?height=200&width=300",
+    "features": [
+      "Catálogo digital",
+      "Reservas online",
+      "Control préstamos",
+      "Multas automáticas"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Plataforma de Streaming de Video",
+    "description": "Servicio de streaming con contenido bajo demanda, perfiles de usuario y recomendaciones.",
+    "category": "Entretenimiento",
+    "technologies": [
+      "React",
+      "AWS",
+      "FFmpeg",
+      "Elasticsearch"
+    ],
+    "status": "En desarrollo",
+    "year": 2024,
+    "image": "/placeholder-tech-soft.png?height=200&width=300",
+    "features": [
+      "Streaming HD",
+      "Recomendaciones",
+      "Perfiles usuario",
+      "Contenido offline"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "App de Delivery de Medicamentos",
+    "description": "Aplicación para entrega de medicamentos a domicilio con verificación de recetas médicas.",
+    "category": "Salud",
+    "technologies": [
+      "Flutter",
+      "Firebase",
+      "Google Maps",
+      "OCR"
+    ],
+    "status": "Completado",
+    "year": 2023,
+    "image": "/placeholder-salud.png?height=200&width=300",
+    "features": [
+      "Entrega domicilio",
+      "Verificación recetas",
+      "Seguimiento pedido",
+      "Recordatorios medicación"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Sistema de Gestión de Recursos Humanos",
+    "description": "Plataforma integral para gestión de empleados, nóminas y evaluaciones de desempeño.",
+    "category": "Gestión",
+    "technologies": [
+      "Angular",
+      "Spring Boot",
+      "PostgreSQL",
+      "Jasper Reports"
+    ],
+    "status": "En desarrollo",
+    "year": 2024,
+    "image": "/placeholder-analytic.png?height=200&width=300",
+    "features": [
+      "Gestión empleados",
+      "Nóminas automáticas",
+      "Evaluaciones desempeño",
+      "Reportes HR"
+    ]
+  }
+]
