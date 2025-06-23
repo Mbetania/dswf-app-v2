@@ -47,7 +47,7 @@ export function Bitacora({ initialData = [] }: { initialData?: LogEntry[] }) {
     return (
       <div className="flex flex-col items-center justify-center h-64">
         <Loader2 className="h-8 w-8 animate-spin text-blue-500" />
-        <p className="mt-4 text-gray-600">Cargando bitácora...</p>
+        <p className="mt-4 text-gray-600 dark:text-gray-300">Cargando bitácora...</p>
       </div>
     )
   }
@@ -59,26 +59,26 @@ export function Bitacora({ initialData = [] }: { initialData?: LogEntry[] }) {
           <input
             type="text"
             placeholder="Buscar entradas..."
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
+          <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400 dark:text-gray-500" />
         </div>
       </div>
 
-      <div className="bg-white rounded-lg shadow-md">
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md">
         {filteredLogs.map((log) => (
           <div
             key={log.id}
-            className="border-b border-gray-200 last:border-0 p-4 hover:bg-gray-50 transition-colors"
+            className="border-b border-gray-200 dark:border-gray-700 last:border-0 p-4 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
           >
             <div className="flex justify-between items-start mb-2">
-              <h3 className="text-lg font-semibold text-gray-800">{log.title}</h3>
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100">{log.title}</h3>
               <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                log.status === "completed" ? "bg-green-100 text-green-800" :
-                log.status === "in-progress" ? "bg-yellow-100 text-yellow-800" :
-                "bg-gray-100 text-gray-800"
+                log.status === "completed" ? "bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200" :
+                log.status === "in-progress" ? "bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200" :
+                "bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
               }`}>
                 {log.status === "completed" ? "Completado" :
                  log.status === "in-progress" ? "En Progreso" :
@@ -86,9 +86,9 @@ export function Bitacora({ initialData = [] }: { initialData?: LogEntry[] }) {
               </span>
             </div>
             
-            <p className="text-gray-600 mb-3">{log.description}</p>
+            <p className="text-gray-600 dark:text-gray-300 mb-3">{log.description}</p>
             
-            <div className="flex items-center space-x-4 text-sm text-gray-500">
+            <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
               <div className="flex items-center">
                 <CalendarDays className="h-4 w-4 mr-1" />
                 {log.date}
@@ -97,7 +97,7 @@ export function Bitacora({ initialData = [] }: { initialData?: LogEntry[] }) {
                 <Clock className="h-4 w-4 mr-1" />
                 {log.time} {log.hours && `(${log.hours} horas)`}
               </div>
-              <span className="bg-gray-100 px-2 py-1 rounded-md">
+              <span className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded-md text-gray-700 dark:text-gray-300">
                 {log.category}
               </span>
             </div>

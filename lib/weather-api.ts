@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// Weather code mappings for OpenMeteo
 interface WeatherCode {
   key: string
   description: string
@@ -27,7 +26,6 @@ const WEATHER_CODES: Record<number, WeatherCode> = {
   95: { key: "Thunderstorm", description: "Thunderstorm" },
 }
 
-// Random locations for the third widget
 const RANDOM_LOCATIONS: string[] = [
   "Tokyo, Japan",
   "New York, USA",
@@ -51,7 +49,6 @@ const RANDOM_LOCATIONS: string[] = [
   "Istanbul, Turkey",
 ]
 
-// Unit types
 type TemperatureUnit = "C" | "F" | "K"
 type SpeedUnit = "kmh" | "mph" | "ms"
 
@@ -92,7 +89,6 @@ interface WeatherParams {
   autoLocate?: "gps" | "ip"
 }
 
-// Unit conversion utilities
 export const unitConverter = {
   temperature: (temp: number, unit: TemperatureUnit): number => {
     switch (unit) {
@@ -139,7 +135,6 @@ export const unitConverter = {
   },
 }
 
-// API request utility
 async function apiRequest(url: string, params: Record<string, any>, signal?: AbortSignal): Promise<any> {
   const urlObj = new URL(url)
   Object.entries(params).forEach(([key, value]) => {
@@ -157,7 +152,6 @@ async function apiRequest(url: string, params: Record<string, any>, signal?: Abo
   return response.json()
 }
 
-// Geolocation services
 export const geolocation = {
   async getGPSLocation(): Promise<Coordinates> {
     return new Promise((resolve, reject) => {
@@ -187,7 +181,6 @@ export const geolocation = {
   },
 }
 
-// Get random location
 export function getRandomLocation(): string {
   const savedRandom = sessionStorage.getItem("randomLocation")
   if (savedRandom) {
@@ -199,7 +192,6 @@ export function getRandomLocation(): string {
   return randomLocation
 }
 
-// Weather API implementations
 class OpenMeteoAPI {
   async getWeather(config: WeatherConfig, params: WeatherParams, signal?: AbortSignal): Promise<WeatherData> {
     // Get location coordinates
@@ -236,7 +228,6 @@ class OpenMeteoAPI {
       throw new Error("No location provided")
     }
 
-    // Get weather data
     const weatherData = await apiRequest(
       "https://api.open-meteo.com/v1/forecast",
       {
@@ -281,7 +272,6 @@ class OpenMeteoAPI {
   }
 }
 
-// Main weather service
 export class WeatherService {
   private openMeteo: OpenMeteoAPI
 
@@ -290,7 +280,6 @@ export class WeatherService {
   }
 
   async getWeather(config: WeatherConfig, params: WeatherParams, signal?: AbortSignal): Promise<WeatherData> {
-    // Handle auto-location
     if (params.autoLocate) {
       try {
         const coords =
@@ -298,7 +287,6 @@ export class WeatherService {
         params = { ...params, lat: coords.lat, lon: coords.lon }
       } catch (error) {
         if (params.autoLocate === "gps") {
-          // Fallback to IP location
           const coords = await geolocation.getIPLocation()
           params = { ...params, lat: coords.lat, lon: coords.lon }
         } else {

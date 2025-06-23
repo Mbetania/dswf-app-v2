@@ -42,10 +42,10 @@ export function TechIcon({ technology }: TechIconProps) {
 
   return (
     <div className="flex flex-col items-center space-y-1">
-      <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-2xl">
+      <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center text-2xl hover-scale transition-all duration-300">
         {getIcon(technology)}
       </div>
-      <span className="text-xs text-gray-600 font-medium">{technology}</span>
+      <span className="text-xs text-gray-600 dark:text-gray-300 font-medium">{technology}</span>
     </div>
   )
 }
