@@ -18,14 +18,12 @@ interface ProjectStatsProps {
 }
 
 export function ProjectStats({ projects, filteredCount }: ProjectStatsProps) {
-  // Calcular estadísticas
   const totalProjects = projects.length
   const completedProjects = projects.filter(p => p.status === "Completado").length
   const inProgressProjects = projects.filter(p => p.status === "En desarrollo").length
   const categories = [...new Set(projects.map(p => p.category))]
   const years = [...new Set(projects.map(p => p.year))].sort((a, b) => b - a)
   
-  // Tecnologías más usadas
   const techCount = projects.reduce((acc, project) => {
     project.technologies.forEach(tech => {
       acc[tech] = (acc[tech] || 0) + 1
@@ -37,7 +35,6 @@ export function ProjectStats({ projects, filteredCount }: ProjectStatsProps) {
     .sort(([,a], [,b]) => b - a)
     .slice(0, 5)
 
-  // Categorías con más proyectos
   const categoryCount = projects.reduce((acc, project) => {
     acc[project.category] = (acc[project.category] || 0) + 1
     return acc
@@ -55,7 +52,6 @@ export function ProjectStats({ projects, filteredCount }: ProjectStatsProps) {
         </div>
       </div>
 
-      {/* Estadísticas principales */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
           <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">{totalProjects}</div>
@@ -76,7 +72,6 @@ export function ProjectStats({ projects, filteredCount }: ProjectStatsProps) {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Tecnologías más populares */}
         <div>
           <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-4 flex items-center">
             <TrendingUp className="w-5 h-5 mr-2" />
@@ -102,7 +97,6 @@ export function ProjectStats({ projects, filteredCount }: ProjectStatsProps) {
           </div>
         </div>
 
-        {/* Distribución por categorías */}
         <div>
           <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-4 flex items-center">
             <Tag className="w-5 h-5 mr-2" />
@@ -131,7 +125,6 @@ export function ProjectStats({ projects, filteredCount }: ProjectStatsProps) {
         </div>
       </div>
 
-      {/* Timeline de años */}
       <div className="mt-8">
         <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-4 flex items-center">
           <Calendar className="w-5 h-5 mr-2" />
